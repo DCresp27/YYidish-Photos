@@ -1,4 +1,127 @@
-.navbar {
-    padding-right: 5%;
-    padding-left: 5%;
+:root {
+    /* Blue Jeans*/
+    --scheme-first: #49b6ffff;
+    --scheme-first-rgb: 73, 182, 255;
+    /* Cornflower Blue */
+    --scheme-second: #779be7ff;
+    --scheme-second-rgb: 119, 155 231;
+    /* Lavender Floral */
+    --scheme-third: #a480cfff;
+    --scheme-third-rgb: 164, 128, 207;
+    /* Super Pink */
+    --scheme-fourth: #d264b6ff;
+    --scheme-fourth-rgb: 210, 100, 182;
+    /* Brilliant Rose */
+    --scheme-fifth: #ff499eff;
+    --scheme-fifth-rgb: 255, 73, 158;
+}
+.headerNavbar {
+    background-color: var(--scheme-third);
+}
+.nav {
+    padding: 1.5% 1%;
+    max-height: 75px;
+    width: available;
+    font-weight: bold;
+}
+#logo {
+    padding: 1% 4%;
+    background-color: var(--scheme-third);
+    max-height: 75px;
+    max-width: 220px;
+}
+.carousel {
+    margin: 0;
+}
+footer {
+    background-color: var(--scheme-third);
+}
+.card {
+    margin: 0 10%;
+}
+.footerNavbar {
+    display: table;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+}
+.footerNavbar > li{
+    list-style: none;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: medium;
+}
+.footerNavbar > li > a {
+    color: var(--scheme-first);
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-primary, .btn-primary:disabled, .btn-primary.disabled,
+.btn-outline-primary, .btn-outline-primary:hover,
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary,
+.btn-outline-primary:active, .btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show{
+    background-color: var(--scheme-first);
+    border-color: var(--scheme-first);
+}
+
+.btn-outline-primary:disabled, .btn-outline-primary.disabled,
+.nav-link, .nav-link:hover, .nav-link:focus,
+.link-primary {
+    color: var(--scheme-first);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: var(--scheme-first);
+}
+.border-primary {
+    border-color: var(--scheme-first) !important;
+}
+.btn-secondary, .btn-secondary:disabled, .btn-secondary.disabled,
+.btn-outline-secondary:hover,.btn-check:checked + .btn-outline-secondary,
+.btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active,
+.btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
+    background-color: var(--scheme-second);
+    border-color: var(--scheme-second);
+}
+.btn-outline-secondary {
+    color: var(--scheme-second);
+    border-color: var(--scheme-second);
+}
+.btn-outline-secondary:disabled, .btn-outline-secondary.disabled,
+.link-secondary {
+    color: var(--scheme-second);
+}
+.border-secondary {
+    border-color: var(--scheme-second) !important;
+}
+.text-primary {
+    --bs-bg-opacity: 1;
+    color: rgba(var(--scheme-first), var(--bs-text-opacity)) !important;
+}
+.text-secondary {
+    --bs-bg-opacity: 1;
+    color: rgba(var(--scheme-second-rgb), var(--bs-text-opacity)) !important;
+}
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--scheme-first-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--scheme-second-rgb), var(--bs-bg-opacity)) !important;
+}
+.text-opacity-25 {
+    --bs-text-opacity: 0.25;
+}
+.text-opacity-50 {
+    --bs-text-opacity: 0.5;
+}
+.text-opacity-75 {
+    --bs-text-opacity: 0.75;
+}
+.text-opacity-100 {
+    --bs-text-opacity: 1;
 }
