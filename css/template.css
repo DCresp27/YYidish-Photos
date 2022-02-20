@@ -15,23 +15,55 @@
     --scheme-fifth: #ff499eff;
     --scheme-fifth-rgb: 255, 73, 158;
 }
-.headerNavbar {
+/*.headerNavbar {
     background-color: var(--scheme-third);
 }
 .nav {
     padding: 1.5% 1%;
     max-height: 75px;
     width: available;
+}*/
+#logo {
+    display: block;
+    width: 12vw;
+}
+.navbar {
+    background-color: var(--scheme-third);
+    flex-wrap: nowrap;
+    font-size: 1.75vw;
+    justify-content: flex-start;
     font-weight: bold;
 }
-#logo {
+.nav-item {
+    height: inherit;
+}
+.navbar-brand {
     padding: 1% 4%;
     background-color: var(--scheme-third);
-    max-height: 75px;
-    max-width: 220px;
 }
 .carousel {
     margin: 0;
+}
+.carousel-item {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 2306 / 1536;
+}
+.carousel-item .background{
+    position: absolute;
+    filter: blur(10px);
+    width: 100%;
+    z-index: 1;
+    }
+.carousel-item .foreground{
+    position: absolute;
+    padding: 8%;
+    z-index: 2;
+}
+.carousel-item button {
+    position: absolute;
+    z-index: 2;
 }
 footer {
     background-color: var(--scheme-third);
