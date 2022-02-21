@@ -39,7 +39,7 @@ footer {
 .footerNavbar {
     display: table;
     text-align: center;
-    height: 60px;
+    height: 15vh;
     width: 100%;
     margin: 0;
 }
@@ -47,10 +47,10 @@ footer {
     list-style: none;
     display: table-cell;
     vertical-align: middle;
-    font-size: medium;
 }
 .footerNavbar > li > a {
     color: var(--scheme-first);
+    font-size: 1.25vw;
     font-weight: bold;
     text-decoration: none;
 }
