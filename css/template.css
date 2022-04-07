@@ -1,5 +1,5 @@
 :root {
-    /* Blue Jeans*/
+    /* Blue Jeans */
     --scheme-first: #49b6ffff;
     --scheme-first-rgb: 73, 182, 255;
     /* Cornflower Blue */
@@ -15,6 +15,9 @@
     --scheme-fifth: #ff499eff;
     --scheme-fifth-rgb: 255, 73, 158;
 }
+/*body {
+    overflow: hidden;
+}*/
 #logo {
     display: block;
     width: 12vw;

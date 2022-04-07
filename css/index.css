@@ -1,29 +1,44 @@
-#homepageCarousel img{
+body{
+    overflow: hidden;
+}
+header, .card, footer {
+    display: none;
+}
+.carousel {
+    height: 100vh;
     width: 100vw;
+}
+.carousel img{
+    margin: 0 auto;
+    width: inherit;
+/*    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.carousel-inner {
+    height: inherit;
 }
 .carousel-item {
-    position: relative;
-    width: 100vw;
-    height: auto;
-    aspect-ratio: 2306 / 1536;
+    height: inherit;
+    margin-right: 0;
 }
 .carousel-item .background{
-    position: absolute;
     filter: blur(10px);
-    width: 100%;
     z-index: 1;
 }
 .carousel-item .foreground{
     position: absolute;
-    padding: 8%;
     z-index: 2;
+    padding: 5%;
 }
 .carousel button {
     position: absolute;
     z-index: 2;
-}
-.carousel {
-    margin: 0;
 }
 .card {
     margin: 0 10%;
