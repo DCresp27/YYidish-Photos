@@ -2,7 +2,6 @@
 // the width or height to 100% and the other to auto
 let adjust = function() {
     let images = $(".carousel .active img");
-    console.log(images);
     let windowRatio = window.innerWidth / window.innerHeight;
     let imageRatio = images[0].width / images[0].height;
     if (windowRatio < imageRatio){
