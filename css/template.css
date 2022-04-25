@@ -1,10 +1,10 @@
 :root {
-    /* Blue Jeans*/
+    /* Blue Jeans */
     --scheme-first: #49b6ffff;
     --scheme-first-rgb: 73, 182, 255;
     /* Cornflower Blue */
     --scheme-second: #779be7ff;
-    --scheme-second-rgb: 119, 155 231;
+    --scheme-second-rgb: 119, 155, 231;
     /* Lavender Floral */
     --scheme-third: #a480cfff;
     --scheme-third-rgb: 164, 128, 207;
@@ -15,10 +15,13 @@
     --scheme-fifth: #ff499eff;
     --scheme-fifth-rgb: 255, 73, 158;
 }
-#logo {
+/*body {
+    overflow: hidden;
+}*/
+/*#logo {
     display: block;
     width: 12vw;
-}
+}*/
 .navbar {
     background-color: var(--scheme-third);
     flex-wrap: nowrap;

@@ -1,30 +1,88 @@
-#homepageCarousel img{
+body{
+    overflow: hidden;
+}
+header, .card, footer {
+    display: none;
+}
+/* Carousel */
+#carouselContainer {
     width: 100vw;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+#homepageCarousel {
+    height: 100vh;
+    width: 100vw;
+}
+.carousel img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0) scale(105%);
+}
+.carousel-inner {
+    height: inherit;
 }
 .carousel-item {
-    position: relative;
-    width: 100vw;
-    height: auto;
-    aspect-ratio: 2306 / 1536;
+    height: inherit;
 }
-.carousel-item .background{
-    position: absolute;
+.carousel-item .background {
     filter: blur(10px);
-    width: 100%;
     z-index: 1;
 }
-.carousel-item .foreground{
-    position: absolute;
-    padding: 8%;
+.carousel-item .foreground {
     z-index: 2;
+    padding: 8vh 8vw;
 }
-.carousel button {
+/*.carousel button {
     position: absolute;
     z-index: 2;
+    display: none;
+}*/
+
+/* Title Card with Logo */
+.nav-bar {
+    position: absolute;
+    top:  5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    z-index: 3;
+    text-align: center;
 }
-.carousel {
-    margin: 0;
+#logo {
+    display: block;
+    margin: 1vh auto;
+    width: 40vw;
 }
-.card {
-    margin: 0 10%;
+.btn {
+    border-radius: 1.75rem !important;
+    padding: .75rem 2.5rem !important;
+    font-size: 1.25rem !important;
+    background-color: rgba( var(--scheme-first-rgb), 60% );
+    border: rgb( var(--scheme-first-rgb));
+    margin: 0 5vw;
+    width: 8em;
+    color: white;
+}
+.btn:hover {
+    background-color: rgb( var(--scheme-first-rgb));
+    border-color: rgb( var(--scheme-first-rgb));
+    color: white;
+}
+.btn-group {
+    margin: 4vh;
+}
+
+@media (max-width: 700px) {
+    #logo {
+        width: 55vw;
+    }
+    .btn {
+        padding: .5rem 1.75rem !important;
+        font-size: .8rem !important;
+    }
+    .btn-group {
+        margin: 15px !important;
+    }
 }
