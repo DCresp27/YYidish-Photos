@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="../css/contact.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../js/contact.js"></script>
+
 </head>
 <body>
     <header>
@@ -38,7 +42,7 @@
         </nav>
     </header>
     <main>
-        <form action="register_account.html" method="get"
+        <form action="formSubmitted.html" method="get"
               name="registration_form" id="registration_form">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name">
@@ -50,9 +54,9 @@
             <input type="text" name="phone" id="phone">
             <span>*</span><br>
             <label>Contact me by:</label>
-            <input type="radio" name="contact" id="text" value="text" checked>Text
-            <input type="radio" name="contact" id="email" value="email">Email
-            <br>
+            <input type="checkbox" name="contact" id="text" value="text" checked>Text
+            <input type="checkbox" name="contact" id="email" value="email">Email
+            <span>*</span><br>
 
             <input type="button" id="submit" value="Submit">
             <input type="button" id="reset_form" value="Reset">

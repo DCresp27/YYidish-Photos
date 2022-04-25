@@ -1,29 +1,21 @@
 :root {
-    /* Blue Jeans */
-    --scheme-first: #49b6ffff;
-    --scheme-first-rgb: 73, 182, 255;
-    /* Cornflower Blue */
-    --scheme-second: #779be7ff;
-    --scheme-second-rgb: 119, 155, 231;
-    /* Lavender Floral */
-    --scheme-third: #a480cfff;
-    --scheme-third-rgb: 164, 128, 207;
-    /* Super Pink */
-    --scheme-fourth: #d264b6ff;
-    --scheme-fourth-rgb: 210, 100, 182;
-    /* Brilliant Rose */
-    --scheme-fifth: #ff499eff;
-    --scheme-fifth-rgb: 255, 73, 158;
+    /* Olive Drab 7 */
+    --scheme-first: #372800;
+    --scheme-first-rgb: 55, 40, 0;
+
+    /* Selective Yellow */
+    --scheme-second: #f6b60d;
+    --scheme-second-rgb: 246, 182, 13;
 }
 /*body {
     overflow: hidden;
 }*/
-/*#logo {
+#logo {
     display: block;
     width: 12vw;
-}*/
+}
 .navbar {
-    background-color: var(--scheme-third);
+    background-color: var(--scheme-second);
     flex-wrap: nowrap;
     font-size: 1.75vw;
     justify-content: flex-start;
@@ -37,7 +29,7 @@
     background-color: var(--scheme-third);
 }
 footer {
-    background-color: var(--scheme-third);
+    background-color: var(--scheme-second);
 }
 .footerNavbar {
     display: table;
