@@ -20,13 +20,16 @@
     font-size: 1.75vw;
     justify-content: flex-start;
     font-weight: bold;
+    max-height: 75px;
+    margin-bottom: 100px;
 }
 .nav-item {
     height: inherit;
 }
 .navbar-brand {
     padding: 1% 4%;
-    background-color: var(--scheme-third);
+    background-color: var(--scheme-second);
+    max-height: 75px;
 }
 footer {
     background-color: var(--scheme-second);
