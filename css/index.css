@@ -18,7 +18,8 @@ header, .card, footer {
 .carousel img {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0) scale(105%);
+    transform: translate(-50%, 0);
+/*scale(105%);*/
 }
 .carousel-inner {
     height: inherit;
@@ -59,15 +60,16 @@ header, .card, footer {
     border-radius: 1.75rem !important;
     padding: .75rem 2.5rem !important;
     font-size: 1.25rem !important;
-    background-color: rgba( var(--scheme-first-rgb), 60% );
-    border: rgb( var(--scheme-first-rgb));
+    background-color: rgba( var(--scheme-second-rgb), 60% );
+    border: rgb( var(--scheme-second-rgb));
     margin: 0 5vw;
     width: 8em;
-    color: white;
+    color: rgb( var(--scheme-first-rgb));
+    font-weight: bold;
 }
 .btn:hover {
-    background-color: rgb( var(--scheme-first-rgb));
-    border-color: rgb( var(--scheme-first-rgb));
+    background-color: rgb( var(--scheme-second-rgb));
+    border-color: rgb( var(--scheme-second-rgb));
     color: white;
 }
 .btn-group {
