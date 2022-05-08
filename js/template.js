@@ -27,7 +27,7 @@ document.getElementById("template-header").innerHTML =
     "        </nav>";
 
 document.getElementById("template-footer").innerHTML = "" +
-    "        <ul class=\"footerNavbar text-primary\">\n" +
+    "        <ul class=\"footerNavbar\">\n" +
     "            <li>\n" +
     "                <a href=\"index.html\">Homepage</a>\n" +
     "            </li>\n" +

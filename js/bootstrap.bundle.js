@@ -1379,7 +1379,19 @@
         to: targetIndex
       });
     }
-
+    /* _adjust method was added by Yoel Druxman to make picture fill screen
+    * It is called when EVENT_SLID is triggered */
+    _adjust() {
+      let images = $(".carousel .active img");
+      let windowRatio = window.innerWidth / window.innerHeight;
+      let imageRatio = images[0].width / images[0].height;
+      if (windowRatio < imageRatio){
+        $(".carousel img").css("height", "inherit").css("width", "auto");
+      } else {
+        $(".carousel img").css("width", "inherit").css("height", "auto");
+      }
+    }
+    
     _setActiveIndicatorElement(element) {
       if (this._indicatorsElement) {
         const activeIndicator = SelectorEngine.findOne(SELECTOR_ACTIVE$1, this._indicatorsElement);
@@ -1442,7 +1454,7 @@
       }
 
       const slideEvent = this._triggerSlideEvent(nextElement, eventDirectionName);
-
+      
       if (slideEvent.defaultPrevented) {
         return;
       }
@@ -1453,15 +1465,15 @@
       }
 
       this._isSliding = true;
-
+      
       if (isCycling) {
         this.pause();
       }
 
       this._setActiveIndicatorElement(nextElement);
-
+      
       this._activeElement = nextElement;
-
+      
       const triggerSlidEvent = () => {
         EventHandler.trigger(this._element, EVENT_SLID, {
           relatedTarget: nextElement,
@@ -1469,6 +1481,7 @@
           from: activeElementIndex,
           to: nextElementIndex
         });
+        this._adjust();
       };
 
       if (this._element.classList.contains(CLASS_NAME_SLIDE)) {
