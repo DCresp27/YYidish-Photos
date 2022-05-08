@@ -11,8 +11,9 @@
     overflow: hidden;
 }*/
 #logo {
-    display: block;
     width: 12vw;
+    max-height: 50px;
+    max-width: 139px;
 }
 .navbar {
     background-color: var(--scheme-second);
@@ -31,13 +32,16 @@
     background-color: var(--scheme-second);
     max-height: 75px;
 }
+/*.navbar-brand {
+    width: 10px;
+}*/
 footer {
     background-color: var(--scheme-second);
 }
 .footerNavbar {
     display: table;
     text-align: center;
-    height: 15vh;
+    height: 5vw;
     width: 100%;
     margin: 0;
 }
@@ -48,7 +52,7 @@ footer {
 }
 .footerNavbar > li > a {
     color: var(--scheme-first);
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     font-weight: bold;
     text-decoration: none;
 }

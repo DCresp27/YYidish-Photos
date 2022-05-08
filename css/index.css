@@ -19,7 +19,6 @@ header, .card, footer {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-/*scale(105%);*/
 }
 .carousel-inner {
     height: inherit;
@@ -35,11 +34,6 @@ header, .card, footer {
     z-index: 2;
     padding: 8vh 8vw;
 }
-/*.carousel button {
-    position: absolute;
-    z-index: 2;
-    display: none;
-}*/
 
 /* Title Card with Logo */
 .nav-bar {
@@ -51,7 +45,7 @@ header, .card, footer {
     z-index: 3;
     text-align: center;
 }
-#logo {
+#homepage-logo {
     display: block;
     margin: 1vh auto;
     width: 40vw;
@@ -64,21 +58,21 @@ header, .card, footer {
     border: rgb( var(--scheme-second-rgb));
     margin: 0 5vw;
     width: 8em;
-    color: rgb( var(--scheme-first-rgb));
+    color: var(--scheme-first);
     font-weight: bold;
 }
 .btn:hover {
     background-color: rgb( var(--scheme-second-rgb));
     border-color: rgb( var(--scheme-second-rgb));
-    color: white;
+    color: var(--scheme-first);
 }
 .btn-group {
     margin: 4vh;
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     #logo {
-        width: 55vw;
+        width: 50vw;
     }
     .btn {
         padding: .5rem 1.75rem !important;
@@ -86,5 +80,14 @@ header, .card, footer {
     }
     .btn-group {
         margin: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #logo {
+        width: 65vw;
+    }
+    .btn-group {
+        margin: 10px !important;
     }
 }
