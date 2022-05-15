@@ -14,6 +14,7 @@ $(document).ready( function() {
     });
 });
 
+// Rome Date Picker
 let today = new Date();
 rome(document.querySelector("#date-picker"),
     {

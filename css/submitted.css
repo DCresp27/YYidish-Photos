@@ -1,0 +1,12 @@
+#confirmation-box {
+    background-color: var(--scheme-second);
+    width: 85%;
+    margin: 5% auto;
+    padding: 5% 0;
+}
+.label {
+    text-align: right;
+}
+.field {
+    text-align: left;
+}
