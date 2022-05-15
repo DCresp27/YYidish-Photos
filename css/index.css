@@ -32,7 +32,7 @@ header, .card, footer {
 }
 .carousel-item .foreground {
     z-index: 2;
-    padding: 8vh 8vw;
+    padding: 5vh 5vw;
 }
 
 /* Title Card with Logo */
@@ -48,7 +48,7 @@ header, .card, footer {
 #homepage-logo {
     display: block;
     margin: 1vh auto;
-    width: 40vw;
+    width: 45vw;
 }
 .btn {
     border-radius: 1.75rem !important;
@@ -70,24 +70,12 @@ header, .card, footer {
     margin: 4vh;
 }
 
-@media only screen and (max-width: 700px) {
-    #logo {
-        width: 50vw;
-    }
+@media only screen and (max-width: 650px) {
     .btn {
-        padding: .5rem 1.75rem !important;
-        font-size: .8rem !important;
+        padding: .75rem 2rem !important;
+        font-size: 1rem !important;
     }
     .btn-group {
         margin: 15px !important;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #logo {
-        width: 65vw;
-    }
-    .btn-group {
-        margin: 10px !important;
     }
 }

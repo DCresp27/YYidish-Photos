@@ -1,6 +1,7 @@
 // Ensures picture always fills the window by changing either
 // the width or height to 100% and the other to auto
-let adjust = function() {
+
+function adjust() {
     let images = $(".carousel .active img");
     let windowRatio = window.innerWidth / window.innerHeight;
     let imageRatio = images[0].width / images[0].height;
@@ -9,10 +10,11 @@ let adjust = function() {
     } else {
         $(".carousel img").css("width", "inherit").css("height", "auto");
     }
-};
+}
+
 $(document).ready(function() {
     adjust();
-});
-window.addEventListener("resize", function() {
-    adjust();
+    window.addEventListener("resize", function() {
+        adjust();
+    });
 });
