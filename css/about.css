@@ -2,6 +2,33 @@
     width: 75%;
     margin:0 auto;
 }
+
 #email{
     width:30%;
+}
+#button{
+    background-color: rgba( var(--scheme-first-rgb), .75 );
+    color: var(--scheme-second)
+}
+
+.input-group{
+    width: 60%;
+}
+.accordion{
+    padding-left: 10%;
+    width: 90%;
+    align-content: center;
+}
+
+.accordion-body {
+    background-color: var(--scheme-second);
+}
+
+.accordion-button{
+    background-color: var(--scheme-second);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--scheme-second);
+    color:  var(--scheme-first);
 }
