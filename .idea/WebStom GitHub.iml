@@ -13,5 +13,6 @@
     <orderEntry type="library" name="@popperjs" level="application" />
     <orderEntry type="library" name="jquery-3.1.1" level="application" />
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
+    <orderEntry type="library" name="lightgallery" level="application" />
   </component>
 </module>

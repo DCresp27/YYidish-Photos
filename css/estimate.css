@@ -11,7 +11,7 @@ a {
     color: var(--scheme-first);
 }
 a:hover {
-    color: var(--scheme-second);
+    color: rgba( var(--scheme-first-rgb), .5);
 }
 label {
     text-decoration: underline;

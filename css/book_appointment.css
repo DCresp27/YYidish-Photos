@@ -23,3 +23,17 @@ main {
 label {
     vertical-align: middle;
 }
+
+/* Submitted Form Classes */
+#confirmation-box {
+    background-color: var(--scheme-second);
+    width: 65%;
+    margin: 5% auto;
+    padding: 5% 0;
+}
+.label {
+    text-align: right;
+}
+.field {
+    text-align: left;
+}
