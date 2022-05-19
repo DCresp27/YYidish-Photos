@@ -62,7 +62,6 @@ let form = new Vue({
         confirmation() {
             this.updateFields();
             this.submitted = true;
-            console.log("Success");
             console.log(this.submitted);
         }
     }
