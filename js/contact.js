@@ -8,6 +8,8 @@ $(document).ready(function(){
         var name = $("#name").val();
         var email = $("#email_address").val();
         var phone = $("#phone").val();
+        var textChoice = document.querySelector('#text');
+        var emailChoice = document.querySelector('#email');
 
         if ( name === "" ||
             ! /^[\w\.\-]+@[\w\.\-]+\.[a-zA-Z]+$/.test(email) ) {
@@ -26,17 +28,20 @@ $(document).ready(function(){
             $( "#phone" ).next().text(
                 "Please enter a phone number as NNN-NNN-NNNN.");
         }
-        if (!$("input[id = 'text']:checked") && !$("input[id = 'email']:checked")){
+        if(!textChoice.checked && !emailChoice.checked){
             isValid = false;
             $( "#email" ).next().text(
                 "Please choose an option.");
         }
         if ( isValid ) {
-            //todo have a dialog box that says it was sent
+            alert("Message Sent!");
         }
-
         $("#email").focus();
     });
+
+    $('reset_form').click(function (){
+
+    })
 });
 
 window.onload = function() {
