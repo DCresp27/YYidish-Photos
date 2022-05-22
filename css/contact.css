@@ -3,7 +3,6 @@ main {
     font-size: 100%;
     width: 1000px;
     margin: 0 auto;
-    text-align: center;
     padding: 0 2em 1em;
 }
 h1 {
@@ -16,7 +15,7 @@ h2 {
     margin-bottom: .25em;
 }
 label {
-    /*float: left;*/
+    float: left;
     width: 9em;
 }
 input, select {
@@ -26,6 +25,10 @@ input, select {
 }
 input[type="checkbox"] {
     width: 1em;
+}
+
+span {
+    color: red;
 }
 
 
