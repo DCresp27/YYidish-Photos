@@ -12,7 +12,7 @@ $(document).ready(function(){
         var emailChoice = document.querySelector('#email');
 
         if ( name === "" ||
-            ! /^[\w\.\-]+@[\w\.\-]+\.[a-zA-Z]+$/.test(email) ) {
+            ! /^[a-zA-Z]+ ?[a-zA-Z]+$/.test(name) ) {
             isValid = false;
             $( "#name" ).next().text("Please enter your name.");
         }
@@ -40,11 +40,11 @@ $(document).ready(function(){
     });
 
     $('reset_form').click(function (){
-
+        document.getElementById("registration_form").reset();
     })
 });
 
 window.onload = function() {
     $("join_list").onclick = joinList;
-    $("email_address1").focus();
+
 };
