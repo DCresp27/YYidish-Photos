@@ -6,7 +6,11 @@
 #email{
     width:30%;
 }
-#button{
+#message{
+    text-align: center;
+    color: red;
+}
+#submit{
     background-color: rgba( var(--scheme-first-rgb), .75 );
     color: var(--scheme-second)
 }
