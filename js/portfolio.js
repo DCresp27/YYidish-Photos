@@ -1,4 +1,13 @@
 <!-- LightGallery Photos and Initiation-->
+/*Vue.component(picture, {
+    props: [ 'picSource', 'altText' ],
+    template: `<img class="img-responsive" src="picSource" alt="altText">`,
+    methods: {
+        getPic(index) {
+            return pictures[index].fullSrc;
+        }
+    }
+})*/
 
 let gallery = new Vue({
     el: "#vueGallery",
@@ -7,7 +16,6 @@ let gallery = new Vue({
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-01.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-01.jpg", type: "Scenery", alt: "Missouri Torah Institute"},
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-02.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-02.jpg", type: "Product", alt: ""},
             { size: "1535-2300", fullSrc: "../Pictures/Portfolio-03.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-03.jpg", type: "Product", alt: ""},
-            { size: "2300-1535", fullSrc: "../Pictures/Portfolio-04.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-04.jpg", type: "People", alt: ""},
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-05.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-05.jpg", type: "Scenery", alt: "Fireworks"},
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-06.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-06.jpg", type: "Scenery", alt: "Dandelion at Night with Moon"},
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-07.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-07.jpg", type: "Scenery", alt: "Ariel View of Forest with River"},
@@ -29,9 +37,7 @@ let gallery = new Vue({
             { size: "2125-1415", fullSrc: "../Pictures/Portfolio-23.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-23.jpg", type: "Scenery", alt: ""},
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-24.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-24.jpg", type: "Scenery", alt: "Waterfall Down Rocks"},
             { size: "2050-1600", fullSrc: "../Pictures/Portfolio-25.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-25.jpg", type: "Scenery", alt: "Duckling Swimming through Leaves"},
-            { size: "2300-1535", fullSrc: "../Pictures/Portfolio-26.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-26.jpg", type: "People",alt: ""},
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-28.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-28.jpg", type: "Scenery", alt: ""},
-            { size: "2300-1535", fullSrc: "../Pictures/Portfolio-29.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-29.jpg", type: "People",alt: ""},
             { size: "1535-2300", fullSrc: "../Pictures/Portfolio-30.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-30.jpg", type: "Scenery", alt: "Seagull Eating Cheeto From Hand"},
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-31.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-31.jpg", type: "Scenery", alt: "View of River with Bow of Boat"},
             { size: "2300-1535", fullSrc: "../Pictures/Portfolio-32.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-32.jpg", type: "Scenery", alt: "Shenandoah National Park Mountain Overlook"},
@@ -41,8 +47,59 @@ let gallery = new Vue({
             { size: "5570-3715", fullSrc: "../Pictures/Portfolio-36.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-36.jpg", type: "Product", alt: ""},
             { size: "3560-3560", fullSrc: "../Pictures/Portfolio-37.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-37.jpg", type: "Product", alt: ""},
             { size: "5570-3715", fullSrc: "../Pictures/Portfolio-41.jpg", desc: "", thumbSrc: "../Pictures/Thumbnails/Portfolio-Thumbnail-41.jpg", type: "Scenery", alt: "Rough Water"},
-        ]
+            { size: "1800-1125", fullSrc: "../Pictures/Portfolio (0)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Birds Playing"},
+            { size: "1600-900", fullSrc: "../Pictures/Portfolio (1)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Tree in a Strom"},
+            { size: "1024-683", fullSrc: "../Pictures/Portfolio (2)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Mountain"},
+            { size: "1024-768", fullSrc: "../Pictures/Portfolio (3)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Mountains with Stream"},
+            { size: "1024-684", fullSrc: "../Pictures/Portfolio (4)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "River and Waterfalling"},
+            { size: "1706-2560", fullSrc: "../Pictures/Portfolio (5)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Boat on River"},
+            { size: "1600-1200", fullSrc: "../Pictures/Portfolio (6)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Tiger"},
+            { size: "1500-1094", fullSrc: "../Pictures/Portfolio (7)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Beats Headphones"},
+            { size: "1600-1200", fullSrc: "../Pictures/Portfolio (8)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Baby Tiger"},
+            { size: "1500-1890", fullSrc: "../Pictures/Portfolio (9)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Wine Bottle and Glass"},
+            { size: "550-770", fullSrc: "../Pictures/Portfolio (10)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Aura"},
+            { size: "1920-1200", fullSrc: "../Pictures/Portfolio (11)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "River and Castle"},
+            { size: "2880-1800", fullSrc: "../Pictures/Portfolio (12)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Autum Forest "},
+            { size: "1500-2250", fullSrc: "../Pictures/Portfolio (13)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Lemondade"},
+            { size: "1728-1080", fullSrc: "../Pictures/Portfolio (14)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Nighttime Cityscape"},
+            { size: "1500-943", fullSrc: "../Pictures/Portfolio (15)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Car"},
+            { size: "1500-1124", fullSrc: "../Pictures/Portfolio (16)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Flying Paint Cans"},
+            { size: "2476-1913", fullSrc: "../Pictures/Portfolio (17)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Perfume in Liquid"},
+            { size: "1500-932", fullSrc: "../Pictures/Portfolio (18)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Tennis Ball Hitting Racket"},
+            { size: "1500-1088", fullSrc: "../Pictures/Portfolio (19)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Motorcycle"},
+            { size: "1920-1080", fullSrc: "../Pictures/Portfolio (20)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Sunrise Over Beach"},
+            { size: "1920-1080", fullSrc: "../Pictures/Portfolio (21)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Early Morning by Beach"},
+            { size: "4550-2559", fullSrc: "../Pictures/Portfolio (22)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Waterfall into River with Mountain in the Background"},
+            { size: "1500-1058", fullSrc: "../Pictures/Portfolio (23)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Watch"},
+            { size: "1920-1539", fullSrc: "../Pictures/Portfolio (24)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Posum"},
+            { size: "1500-1100", fullSrc: "../Pictures/Portfolio (25)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Paint Buckets with Paint Splashing"},
+            { size: "1500-1100", fullSrc: "../Pictures/Portfolio (26)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Basketball with Paint Spraying from Both Sides"},
+            { size: "1920-1200", fullSrc: "../Pictures/Portfolio (27)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Deer with Antlers Early Morning"},
+            { size: "1500-994", fullSrc: "../Pictures/Portfolio (28)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Elk Walking in the Grass"},
+            { size: "2560-1707", fullSrc: "../Pictures/Portfolio (29)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Desert Mountains"},
+            { size: "1500-1075", fullSrc: "../Pictures/Portfolio (30)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Whiskey and Glass"},
+            { size: "1920-1080", fullSrc: "../Pictures/Portfolio (31)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "House Cat"},
+            { size: "1500-1024", fullSrc: "../Pictures/Portfolio (32)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Whiskey Bottle Cut in Half with Apple Inside"},
+            { size: "1622-1080", fullSrc: "../Pictures/Portfolio (33)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Rocky Bank by Ocean at Sunrise"},
+            { size: "1920-1200", fullSrc: "../Pictures/Portfolio (34)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Swan Swimming with Ducklings"},
+            { size: "3265-2449", fullSrc: "../Pictures/Portfolio (35)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Early Morning by Beach"},
+            { size: "1024-768", fullSrc: "../Pictures/Portfolio (36)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Owl"},
+            { size: "1920-1080", fullSrc: "../Pictures/Portfolio (37)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Wave Breaking"},
+            { size: "1022-614", fullSrc: "../Pictures/Portfolio (38)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "Owl"},
+            { size: "1500-1816", fullSrc: "../Pictures/Portfolio (39)", desc: "", thumbSrc: this.fullSrc, type: "Product", alt: "Glass with Drink Flying and Breaking"},
+            { size: "1600-1200", fullSrc: "../Pictures/Portfolio (40)", desc: "", thumbSrc: this.fullSrc, type: "Animal", alt: "3 Seals"},
+            { size: "2000-1333", fullSrc: "../Pictures/Portfolio (41)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Beach with Palm Trees"},
+            { size: "1920-1080", fullSrc: "../Pictures/Portfolio (42)", desc: "", thumbSrc: this.fullSrc, type: "Scenery", alt: "Waterfall into Field"},
+
+
+        ],
+        typeToShow: "All",
     },
+    methods: {
+        filter(category) {
+            this.typeToShow = category;
+        }
+    }
 });
 
 jQuery("#animated-thumbnails-gallery")
@@ -70,5 +127,3 @@ jQuery("#animated-thumbnails-gallery")
             }
         );
     });
-
-$(".nav-pills .nav-link")

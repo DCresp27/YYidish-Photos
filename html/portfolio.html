@@ -12,23 +12,23 @@
     <body class="d-flex flex-column min-vh-100">
         <div id="header"><template-header></template-header></div>
 
-            <main>
+            <main id="vueGallery">
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">All</a>
+                        <a class="nav-link active" href="#" @click="filter('All')">All</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">People</a>
+                        <a class="nav-link" href="#" @click="filter('Animal')">Animals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Scenery</a>
+                        <a class="nav-link" href="#" @click="filter('Scenery')">Scenery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="#" @click="filter('Product')">Products</a>
                     </li>
                 </ul>
 
-                <div class="container" id="vueGallery">
+                <div class="container">
                     <div class="row justify-content-center">
                         <div class="col col-md-11">
                             <div class="gallery-container" id="animated-thumbnails-gallery">
@@ -36,10 +36,12 @@
                                    :data-lg-size="image.size"
                                    class="gallery-item"
                                    :data-src="image.fullSrc"
-                                   :data-sub-html="image.desc">
-                                   <img class="img-responsive"
-                                        :src="image.thumbSrc"
-                                        :alt="image.alt"/>
+                                   :data-sub-html="image.desc"
+                                    v-if="typeToShow === image.type || typeToShow === 'All'">
+                                    <img class="img-responsive"
+                                         :src="image.thumbSrc"
+                                         :alt="image.alt"
+                                        v-if=""/>
                                 </a>
                             </div>
                         </div>
