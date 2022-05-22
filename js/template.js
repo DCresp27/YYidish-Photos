@@ -1,4 +1,4 @@
-var header = Vue.component('templateHeader', {
+var templateHeader = Vue.component('templateHeader', {
     template:
         "<nav class=\"navbar\">\n" +
         "    <a class=\"navbar-brand\" href=\"index.html\">\n" +
@@ -22,7 +22,7 @@ var header = Vue.component('templateHeader', {
         "</nav>"
 })
 
-let footer = Vue.component('templateFooter', {
+let templateFooter = Vue.component('templateFooter', {
     template:
         "<ul class=\"footerNavbar\">\n" +
         "    <li>\n" +
@@ -50,13 +50,13 @@ let footer = Vue.component('templateFooter', {
 let head = new Vue({
     el: "#header",
     components: {
-        'header': header
+        'templateHeader': templateHeader
     }
 });
 
 let foot = new Vue({
     el: "#footer",
     components: {
-        'footer': footer
+        'templateFooter': templateFooter
     }
 });

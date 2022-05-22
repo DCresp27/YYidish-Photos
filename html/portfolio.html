@@ -15,16 +15,16 @@
             <main id="vueGallery">
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" @click="filter('All')">All</a>
+                        <a class="nav-link" :class="typeToShow == 'All' ? 'active' : ''" href="#" @click="filter('All')">All</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" @click="filter('Animal')">Animals</a>
+                        <a class="nav-link" :class="typeToShow == 'Animal' ? 'active' : ''" href="#" @click="filter('Animal')">Animals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" @click="filter('Scenery')">Scenery</a>
+                        <a class="nav-link" :class="typeToShow == 'Scenery' ? 'active' : ''" href="#" @click="filter('Scenery')">Scenery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" @click="filter('Product')">Products</a>
+                        <a class="nav-link" :class="typeToShow == 'Product' ? 'active' : ''" href="#" @click="filter('Product')">Products</a>
                     </li>
                 </ul>
 
@@ -40,8 +40,7 @@
                                     v-if="typeToShow === image.type || typeToShow === 'All'">
                                     <img class="img-responsive"
                                          :src="image.thumbSrc"
-                                         :alt="image.alt"
-                                        v-if=""/>
+                                         :alt="image.alt"/>
                                 </a>
                             </div>
                         </div>
