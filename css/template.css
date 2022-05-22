@@ -22,6 +22,9 @@ body {
 
 
 }
+main {
+    margin: 5vh 0 !important;
+}
 .navbar {
     background-color: var(--scheme-second);
     /*flex-wrap: nowrap;
@@ -30,7 +33,6 @@ body {
     font-size: 1.2rem;
     justify-content: flex-start;
     font-weight: bold;
-    margin-bottom: 5vh;
 }
 .nav-item {
     height: inherit;
@@ -47,20 +49,16 @@ body {
     max-height: 100px;
     max-width: 278px;
 }
-footer {
-    background-color: var(--scheme-second);
-}
-.margin {
-    height: 5vh;
-}
 .footerNavbar {
+    background-color: var(--scheme-second);
     display: table;
     text-align: center;
 
     height: 6vw;
 
     width: 100%;
-    margin: .75vh;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 .footerNavbar > li{
     list-style: none;
