@@ -11,6 +11,13 @@ $(document).ready( function() {
             price.val("Invalid");
         }
     });
+    // Rome Date Picker
+    let today = new Date();
+    rome(document.querySelector("#date-picker"),
+        {
+            dateValidator: rome.val.only(today , new Date(today.getFullYear() + 1, today.getMonth(), today.getDay() ) )
+        }
+    );
 });
 
 let form = new Vue({
