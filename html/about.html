@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>YYDISH Photos: About</title>
-        <link rel="stylesheet" href="../css/bootstrap.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../css/rome.css"/>
+
         <link rel="stylesheet" href="../css/template.css">
         <link rel="stylesheet" href="../css/about.css">
     </head>
@@ -59,14 +63,21 @@
             <br/>
 
 
-            <h2 class="email-entry text-center">
-                Please enter your email to receive updates!
-            </h2>
+            <div id="signup">
 
-            <form class="input-group">
-                <input required type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" aria-describedby="Email">
-                <button class="btn" type="submit" id="button">Submit</button>
-            </form>
+                <h2 class="email-entry text-center">
+                    Please enter your email to receive updates!
+                </h2>
+
+                <form class="input-group">
+                    <input required type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" aria-describedby="Email">
+                    <button class="btn" type="button" id="submit">Submit</button>
+                </form>
+            </div>
+            <p id="message"></p>
+            <div id="box">
+
+            </div>
 
         </main>
 
