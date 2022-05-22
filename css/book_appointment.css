@@ -1,0 +1,39 @@
+body {
+    font-weight: bold;
+    font-size: larger;
+}
+main {
+    text-align: center;
+}
+.form-control:focus {
+    border-color: rgb( var(--scheme-first-rgb) );
+    box-shadow: 0 0 0 0.25rem rgba( var(--scheme-first-rgb), 0.5);
+}
+.form-group {
+    text-align: right;
+}
+#date {
+    text-align: left;
+}
+#date-picker {
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+label {
+    vertical-align: middle;
+}
+
+/* Submitted Form Classes */
+#confirmation-box {
+    background-color: var(--scheme-second);
+    width: 65%;
+    margin: 5% auto;
+    padding: 5% 0;
+}
+.label {
+    text-align: right;
+}
+.field {
+    text-align: left;
+}

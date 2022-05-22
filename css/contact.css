@@ -2,14 +2,14 @@ main {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 100%;
     background-color: white;
-    width: 730px;
+    width: 1000px;
     margin: 0 auto;
     //border: 3px solid blue;
     padding: 0 2em 1em;
 }
 h1 {
-    font-size: 150%;
-    color: blue;
+    font-size: 300%;
+    color: black;
     margin-bottom: .5em;
 }
 h2 {
@@ -25,6 +25,6 @@ input, select {
     margin-left: 1em;
     margin-bottom: 1em;
 }
-input[type="checkbox"],[type="radio"] {
+input[type="checkbox"] {
     width: 1em;
 }
