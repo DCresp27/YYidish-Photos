@@ -36,3 +36,7 @@
     background-color: var(--scheme-second);
     color:  var(--scheme-first);
 }
+#map{
+    margin: auto;
+    padding-bottom: 10px;
+}
